@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>假期延长教程</title>
+    <style>
+        #holidayTitle {
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            animation: colorChange 5s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: red; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: green; }
+            100% { color: blue; }
+        }
+        #warningText {
+            width: 50%;
+            margin: 20px auto;
+            font-size: 24px;
+            color: red;
+            text-align: center;
+            animation: scaleAnimation 2s infinite;
+        }
+        #viewTutorialButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 40px;
+            width: 200px;
+            background-color: #007BFF;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #007BFF;
+            line-height: 30px;
+            box-sizing: border-box;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        @keyframes scaleAnimation {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        #arrow {
+            display: block;
+            margin: 10px auto;
+            font-size: 48px; /* 比原本大两倍 */
+            color: red;
+            text-align: center;
+            animation: scaleAnimation 2s infinite;
+        }
+        #arrows {
+            display: flex;
+            justify-content: center;
+            margin-top: 1px; // 修改间隔
+        }
+        #arrows div {
+            font-size: 48px; /* 比原本大两倍 */
+            color: red;
+            animation: scaleAnimation 2s infinite;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;"> <!-- 新增的居中样式 -->
+        <div id="holidayTitle">假期延长教程</div> <!-- 新增的大标题 -->
+        <div id="warningText">童叟无欺，免费查看！</div>
+    </div>
+    <div id="arrows">
+        <div>↓</div>
+        <div>↓</div>
+    </div>
+    <a href="PTE/index.html" id="viewTutorialButton">查看教程</a>
+</body>
+</html>
+
